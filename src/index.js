@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Logics from "./Components/Logics/Logics"
+import SystemDesigen from './Components/StstemDesign/SystemDesigen';
+import Devops from './Components/Devops/Devops';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
     <App />
+    {/* <Logics/> */}
+    {/* <SystemDesigen/> */}
+    {/* <Devops/> */}
   </React.StrictMode>
 );
 

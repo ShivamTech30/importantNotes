@@ -1,0 +1,3 @@
+ what is single threaded,how node js handles concurrnet,
+how event loop workes,how node js workes
+:- node js is single threaded
