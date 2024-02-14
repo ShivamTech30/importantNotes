@@ -5,6 +5,7 @@ import './App.css';
 import useToggle from './useToggle';
 import { useState } from 'react';
 import MemoUse from './memoUse/MemoUse';
+import JavascriptAdvance from './JavascriptAdvance/JavascriptAdvance';
 
 function App() {
 
@@ -12,10 +13,14 @@ function App() {
 
   // console.log("jghjsdhvs",state, stat)
 
-  const [CountValue,setCountValue]=useState(0)
+  const [CountValue, setCountValue] = useState(0)
 
   return (
     <div className="App">
+
+
+<JavascriptAdvance/>
+      
       {/* <Loader/> */}
       {/* <Logics/> */}
 
@@ -32,17 +37,17 @@ function App() {
 
 
       {/* memo hook start */}
-      <div>
-<p>
-<MemoUse state={CountValue}/>
-   
-</p>
+      {/* <div>
+        <p>
+          <MemoUse state={CountValue} />
 
-<button onClick={()=>setCountValue(CountValue +1)}>
+        </p>
 
-  count
-</button>
-      </div>
+        <button onClick={() => setCountValue(CountValue + 1)}>
+
+          count
+        </button>
+      </div> */}
       {/* memo hook end */}
 
 

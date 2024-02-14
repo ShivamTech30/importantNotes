@@ -6,15 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import Logics from "./Components/Logics/Logics"
 import SystemDesigen from './Components/StstemDesign/SystemDesigen';
 import Devops from './Components/Devops/Devops';
+import InfinitScool from './Components/infinitScroll/InfinitScool';
+import PureComponent from './Components/PureComponent/PureComponent';
+import DebounceComponent from './Components/DebounceComponent/DebounceComponent';
+import Startingprocess from './Startingprocess/Startingprocess';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <App />
+    {/* <App /> */}
+    {/* <InfinitScool/> */}
+    {/* <PureComponent/>. */}
+    <DebounceComponent/>
     {/* <Logics/> */}
     {/* <SystemDesigen/> */}
     {/* <Devops/> */}
+    <Startingprocess/>
   </React.StrictMode>
 );
 

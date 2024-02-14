@@ -7,7 +7,7 @@ const Logics = () => {
 
     const [state, toggleFun] = useToggle(false)
 
-
+// javascript  is a  synchronus single threaded language
 
 
     // what is method
@@ -76,20 +76,20 @@ const Logics = () => {
 
         name1: "shivam1",
         Lname: "shivamS1",
-        nyFun: function (val,bhi) {
+        nyFun: function (val, bhi) {
             console.log(`my name is ${this.name1}   ${val} ${bhi}`)
             console.log(this)
         }
 
 
     }
-    console.log(ba?.nyFun.call(ab,"nahi","bhai"))
-    console.log(ba?.nyFun.apply(ab,["nahi","bhai"])) //apply method takes argument inside the array
-let fun=ba?.nyFun.bind(ab,["nahi","bhai"]) //bind returns function
-console.log(fun())
+    console.log(ba?.nyFun.call(ab, "nahi", "bhai"))
+    console.log(ba?.nyFun.apply(ab, ["nahi", "bhai"])) //apply method takes argument inside the array
+    let fun = ba?.nyFun.bind(ab, ["nahi", "bhai"]) //bind returns function
+    console.log(fun())
     // console.log(ba?.nyFun.apply(ab,["nahi","bhai"]))
 
- 
+
 
     let baa = {
 
@@ -103,7 +103,7 @@ console.log(fun())
         //     console.log(`my name is ${this.name1} `)
         //     //  this key word is not working inside the arraw function
         // }
-        nyFun( ) {
+        nyFun() {
             console.log(`my name is ${this.name1} `)
             //  you can write function like this also
 
@@ -112,25 +112,25 @@ console.log(fun())
 
     }
 
-    const valuee=baa.nyFun.bind(baa)
-     valuee()
+    const valuee = baa.nyFun.bind(baa)
+    valuee()
 
 
-     //proto prototype and class
+    //proto prototype and class
 
 
 
-     function hello () {
+    function hello() {
         console.log("nbavandnamd")
-        console.log("dcsdfsdf",hello?.prototype)
-     }
-     hello.hey="mynmae"
+        console.log("dcsdfsdf", hello?.prototype)
+    }
+    hello.hey = "mynmae"
 
     //  console.log("dcsdfsdf",hello?.hey)
-hello.prototype.naa="samm"
-hello()
+    hello.prototype.naa = "samm"
+    hello()
 
-// console.log("dcsdfsdf",hello?.prototype)
+    // console.log("dcsdfsdf",hello?.prototype)
 
 
     return (
@@ -207,6 +207,13 @@ export default Logics
 //     // the event loop pushes tasks  from the task queue to the call stack
 
 //     // suppose that there is a setTimeout function which waits for 3 secound and that will go on (queue) and this will wait .... 
+// in event loop there is two queues callback queue and microTask queues
+
+// suppose that in callStack there  is two task one is promise and second one is settimeout
+// the promise will executed first becouse it will gose to microTask and settimeoiut will gose to eventLoop and enevnt loop give the priority to microtaks first 
+
+
+
 
 
 //     // 222222222222222222222
@@ -251,8 +258,17 @@ export default Logics
 
 //     // 7777777777777777777777777
 
+
+
+
 //     // this , call bind , apply
 
+// this key word is refering the on object 
+// in arrow function this key world is not working
+// call will take  func.call(thisObj, args1, args2, ...)
+// func.apply(thisObj, [args1, args2, ...]);
+
+// let data =func.bind(thisObj, arg1, arg2, ..., argN);
 
 
 //     // higher order Function 
@@ -274,6 +290,7 @@ export default Logics
 //     // debounce vs throttle
 
 // // what is prototype 
+// in javascript there is defult object constructor with that constructor there is default object is created and that object is known as prototype 
 
 
 
