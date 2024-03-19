@@ -19,7 +19,7 @@ function App() {
     <div className="App">
 
 
-<JavascriptAdvance/>
+{/* <JavascriptAdvance/> */}
       
       {/* <Loader/> */}
       {/* <Logics/> */}
@@ -37,17 +37,18 @@ function App() {
 
 
       {/* memo hook start */}
-      {/* <div>
+      <div>
         <p>
-          <MemoUse state={CountValue} />
+          {/* <MemoUse state={CountValue} /> */}
+          <MemoUse   />
 
         </p>
-
+{/* 
         <button onClick={() => setCountValue(CountValue + 1)}>
 
           count
-        </button>
-      </div> */}
+        </button> */}
+      </div>
       {/* memo hook end */}
 
 

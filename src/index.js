@@ -10,6 +10,7 @@ import InfinitScool from './Components/infinitScroll/InfinitScool';
 import PureComponent from './Components/PureComponent/PureComponent';
 import DebounceComponent from './Components/DebounceComponent/DebounceComponent';
 import Startingprocess from './Startingprocess/Startingprocess';
+import MemoUse from './memoUse/MemoUse';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,11 +19,12 @@ root.render(
     {/* <App /> */}
     {/* <InfinitScool/> */}
     {/* <PureComponent/>. */}
-    <DebounceComponent/>
+    {/* <DebounceComponent/> */}
     {/* <Logics/> */}
     {/* <SystemDesigen/> */}
     {/* <Devops/> */}
-    <Startingprocess/>
+    {/* <Startingprocess/> */}
+    <MemoUse/>
   </React.StrictMode>
 );
 

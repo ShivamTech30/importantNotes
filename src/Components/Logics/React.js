@@ -1,3 +1,55 @@
+// what is HTML 
+// it is used for discribing content and structure of web page
+
+
+// what are symantic tags in html
+// table,select,footer,header,artical (these tag also help in search engine optimization)
+
+
+// what is diffrance between tag and element
+// element is a tag with its content included , tag is just statring and end tag and with  
+// content is called as element
+
+// what are atributes
+// atributes provide additional information about elemnet 
+
+
+// what is diffrance bettween div and snap
+// div is block lable element and span is a inline element
+// div will take full with but the span will take width of content 
+// inline tag's are snap,image , inline elements are in two type 1) one is replaced in line (those elements are come through    url like image,video,ifram), 2) is non repleced inline
+
+
+
+// difrance between canvas and svg
+
+
+// css 
+// cascarding style sheet   
+
+
+// what is the meaning of cascarding , blow style will overlap the above style
+
+// what is spacifity
+
+
+
+// default value of position 
+// that a position static
+
+// posiotion absolue and relative
+
+
+
+
+// what us flex box
+// 
+
+
+
+
+
+
 // browsr can not read moden javascript so we are using babel
 
 //what is  babel 
@@ -10,15 +62,6 @@
 
 // what is webpack analyzer in react
 // Webpack Bundle Analyzer is a tool to visualize and analyze the size of JavaScript application bundles. You can use it to identify any large and redundant modules contributing to the overall bundle size.
-
-
-
-
-
-
-
-
-
 
 
 

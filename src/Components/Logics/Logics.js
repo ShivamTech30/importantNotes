@@ -7,7 +7,8 @@ const Logics = () => {
 
     const [state, toggleFun] = useToggle(false)
 
-// javascript  is a  synchronus single threaded language
+    // javascript  is a  synchronus single threaded language
+    // single threaded  means it run a one task at a time it cont run multiple task at a time    
 
 
     // what is method
@@ -21,7 +22,7 @@ const Logics = () => {
             console.log(` my name is ${this.firstName} and my last name is  ${this.lastNme}  `)
         }
         // ${this.firstName} , this means that newObject 
-        //if you still did't understand this the just console.log(this), and how you will undeerstand 
+        //if you still did't understand this the just console.log(this), and then you will undeerstand 
     }
     console.log(newObject?.newfuntion())
 
@@ -32,10 +33,45 @@ const Logics = () => {
 
 
 
+    // JavaScript has 8 Datatypes
+    // String.
+    // Number.
+    // Bigint.
+    // Boolean.
+    // Undefined.
+    // Null.
+    // Symbol.
+    // Object.
+
+
+    // what is truly and falsy in javascript
+    // When non-boolean values are used in a boolean context, such as the condition of an if statement, they will be coerced into either true or false . Values that are coerced into true are called truthy and values that are coerced into false are called falsy.
 
 
 
 
+    // JavaScript modules
+    // what is method
+    // function inside the object is called as method
+    // JavaScript modules are a powerful tool for organizing and structuring code. They allow you to split your code into smaller, self-contained units that can be reused and maintained more easily. Modules also make your code more modular and reusable, which can make it easier for other developers to understand and use.
+
+
+    // what is javascript execution context
+    // When the JavaScript engine scans a script file, it makes an environment called the Execution Context that handles the entire transformation and execution of the code. During the context runtime, the parser parses the source code and allocates memory for the variables and functions.
+
+
+
+    // Memoization in js
+    // Memoization is a technique where the return value of a function is cached based on its input parameters. Subsequent calls to the function with the same parameters can then directly return the cached result, eliminating the need for repeated computation
+
+
+
+    // What is design pattern JavaScript?
+    // JavaScript (JS) is a lightweight, interpretive, object-oriented programming language with first-class functions widely used as web page scripting. Design patterns are reusable code that is applied to solving commonly occurring problems
+
+
+    // 2500 + 1000 + 871 + 2010 + 4200 + 4500 + 1600 + 211 + 2000 + 4000 + 3500 + 1000 + 1500 + 500 =
+    // 2500 + 1000 + 871 + 2010 + 4200 + 4500 + 1600 + 211 + 2000 + 4000 + 3500 + 1000 + 1500 + 500 =
 
     // let a = {
 
@@ -130,7 +166,77 @@ const Logics = () => {
     hello.prototype.naa = "samm"
     hello()
 
-    // console.log("dcsdfsdf",hello?.prototype)
+        // console.log("dcsdfsdf",hello?.prototype)
+
+
+        // --------------------- first class function start---------------------------
+
+        // A programming language is said to have First-class functions if functions in that language are treated like other variables. So the functions can be assigned to any other variable or passed as an argument or can be returned by another function. JavaScript treats function as a first-class citizen.
+        // let newFunc = () => {
+        //     return "this function is passing as a argumrnt in side the  AclassFunction"
+        // }
+
+        // const AclassFunction = (takeNewFun) => {
+        //     // console.log(takeNewFun)
+
+        //     return takeNewFun
+        // }
+        // AclassFunction(newFunc())
+
+        // console.log(AclassFunction(newFunc()))
+
+        // --------------------- first class function end ---------------------------
+
+
+        //---------------------- new keyword start ------------------------------------------
+
+        // new keyword create's a blanck object 
+
+        // function newKetWord() {
+
+        //     this.name1 = "shivam"
+        // }
+        // console.log(new newKetWord())
+
+        //---------------------- new keyword end ------------------------------------------
+
+
+        //---------------------- iife start ------------------------------------------
+
+        //  immediately  invoked  function expression
+
+        //  const invokedFun =(()=>{
+        // console.log("nmbjsvdchsd")
+        // })() 
+
+        (function () {
+
+            console.log("nmbjsvdchsd1")
+        })()
+
+    //---------------------- iife end ------------------------------------------
+
+    // for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
+
+    // }
+
+    let arrayData = [20, 5, 7, 9, 43, 5, 7]
+
+
+    // for(let i=0; i<arrayData.length; i++){  
+    //     for (let j = i+1; j < arrayData.length; j++) {
+    //         if(arrayData[i] > arrayData[j]){
+
+    //             arrayData[i] = arrayData[i] + arrayData[j];
+    //             arrayData[j] = arrayData[i] - arrayData[j];
+    //             arrayData[i] = arrayData[i] - arrayData[j];
+
+    //         }   
+    //     }
+    // }
+
+    console.log("jhgcfxgvh");
 
 
     return (
@@ -206,7 +312,7 @@ export default Logics
 
 //     // the event loop pushes tasks  from the task queue to the call stack
 
-//     // suppose that there is a setTimeout function which waits for 3 secound and that will go on (queue) and this will wait .... 
+//     // suppose that there is a setTimeout function which waits for 3 secound and that will go on  ( call back queue) and this will wait .... 
 // in event loop there is two queues callback queue and microTask queues
 
 // suppose that in callStack there  is two task one is promise and second one is settimeout
@@ -363,3 +469,22 @@ export default Logics
 // }
 
 // let result = func(2)(3)
+
+
+// diff btwn if else and ternaory oprater 
+// if else is a statment and ternaory oprator is a expresstion 
+// let aa = 1==2?true:false -> this returen value happend in  expession and statement is not stored its value in varaible 
+
+
+// difrance between deep copy and shelo copy
+
+
+// this is the way to prevent to change the value of name 
+// const object={
+//     name:"sam",
+//     fullname:"saha"
+// }
+// Object.defineProperties(object,{name:{writable:false}})
+
+// object.name="shivam"
+// console.log(object)
