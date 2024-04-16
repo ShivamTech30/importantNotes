@@ -25,6 +25,13 @@ height: 400px;
   margin: 20px;
   height: 40px;
 }
+.flexBox{
+  background-color: red;
+  border: 2px solid black;
+   width: 440px;
+  margin: 20px;
+  height: 440px;
+}
 .App{
   background-color: wheat !important;
 }

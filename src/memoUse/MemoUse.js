@@ -26,29 +26,29 @@ export default function MemoUse({ state }) {
     let sam = "122"
     let sam1 = "221"
     sam = sam1
-    console.log("bhcbczc", sam)
-    console.log("bhcbczc1", sam1)
+    // console.log("bhcbczc", sam)
+    // console.log("bhcbczc1", sam1)
 
     const promis = new Promise(res => res(2));
     promis.then(v => {
-        console.log(v)
+        // console.log(v)
         return v * 2
     }).then(v => {
-        console.log(v)
+        // console.log(v)
         return v * 2
     }).finally(v => {
-        console.log(v)
+        // console.log(v)
         return v * 2
     }).then(v => {
-        console.log(v)
+        // console.log(v)
 
     })
 
 
     var a = 5
-    console.log(1< 3 <5 )
+    // console.log(1< 3 <5 )
     // console.log(a+1)
-    console.log(true + 1)
+    // console.log(true + 1)
     
 
 
@@ -60,16 +60,28 @@ export default function MemoUse({ state }) {
     useEffect(() => {
 
         if (aa == av == 5) {
-            console.log({ "run": "" })
+            // console.log({ "run": "" })
         }
         else {
-            console.log({ "eror": "" })
+            // console.log({ "eror": "" })
         }
 
     }, [])
 
 
 
+    const myObject = { oldKey: 'value' };  
+
+  // Renaming the key from 'oldKey' to 'newKey' 
+  const { oldKey: newKey, ...rest } = myObject; 
+  console.log({...rest})
+  const updatedObject = { newKey, ...rest };
+  
+//   console.log(updatedObject); // { newKey: 'value' }
+
+
+//   let continue = 'shiva'
+//   console.log({console})
 
     return (
 

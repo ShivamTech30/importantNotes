@@ -15,12 +15,71 @@ function App() {
 
   const [CountValue, setCountValue] = useState(0)
 
+
+  const myObject = { oldKey: 'value' };
+
+  // Renaming the key from 'oldKey' to 'newKey' 
+  const { oldKey: newKey, ...rest } = myObject;
+  const updatedObject = { newKey, ...rest };
+
+  // console.log(updatedObject); // { newKey: 'value' }
+
+  // let arrt=2
+
+  // let arr2=5
+
+  // console.log(arrt ** arr2)
+
+  let functionS = (masks) => {
+    const result = masks ?? "absent"
+    // ?? this operter is called null coellcing opertaer 
+    console.log(result)
+
+  }
+
+  functionS(2)
+  functionS(1)
+  functionS(0)
+
+  let array = [1, [2], [[4]], [[3], 4, [[[5]]]]];
+
+  // console.log("sdsfdfsdf1",array.length)
+
+  function flattenArray(arr) {
+
+
+    for (let i = 0; i < arr.length; i++) {
+      console.log("sdsfdfsdf", arr[i])
+    }
+
+
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+
+      // console.log("sdsfdfsdf",Array.isArray(arr[i]))
+
+      if (Array.isArray(arr[i])) {
+        result = result.concat(flattenArray(arr[i]));
+        // console.log("sdsfdfsdf",result)
+      } else {
+        result.push(arr[i]);
+      }
+    }
+
+    return result;
+  }
+
+  let output = flattenArray(array);
+  console.log(output);
+
+
   return (
     <div className="App">
 
 
-{/* <JavascriptAdvance/> */}
-      
+      {/* <JavascriptAdvance/> */}
+
       {/* <Loader/> */}
       {/* <Logics/> */}
 
@@ -40,10 +99,10 @@ function App() {
       <div>
         <p>
           {/* <MemoUse state={CountValue} /> */}
-          <MemoUse   />
+          <MemoUse />
 
         </p>
-{/* 
+        {/* 
         <button onClick={() => setCountValue(CountValue + 1)}>
 
           count

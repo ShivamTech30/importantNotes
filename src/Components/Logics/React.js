@@ -1,3 +1,19 @@
+
+
+// Hello, I'm Shivam Sharma. I'm currently employed at Externlabs, where I've been working for the past two years. With a total of three years of experience in React.js, I've honed my skills in front-end development, specializing in crafting dynamic and user-friendly web applications
+
+
+// why do u want to switch your company
+
+// i want to explore more about my technologys  
+// i want to seek  new challenges 
+// i want to grow my self in the way that benifits my company where will  work
+//  i want to change  my city 
+
+
+
+
+
 // what is HTML 
 // it is used for discribing content and structure of web page
 
@@ -69,18 +85,24 @@
 //-----1-----///// Lifecycle Methods
 
 // constructor()//
-// "before render the page"
+// "before render the page that is initialization stage where we add states"
 
-// render()
+// render() 
 // "after render the page "
-// componentDidUpdate() this method will render after the Render(). this method is use during the api call's
-
-
 // componentDidUpdate
 // " when you update the states then componentDidUpdate method will call or propes will come's after update "
 
 
-// componentWillUnmount
+
+
+
+// componentWillMount() this method will render after the dependany changes
+
+
+ 
+
+// componentWillUnmount 
+// that is the return statment in useEffect
 
 
 // -----2-----///// Stateful and Stateless Components 
@@ -142,6 +164,7 @@
 // how to implement Lazy Loading in react routers with router DOM libraty
 // fallback 
 // The React.lazy() function takes a component definition as an argument and returns a new component that is loaded on demand. The Suspense component is used to handle the loading process and display a fallback UI while the component is loading.
+
 // Here is an example of how to use lazy loading in React:
 // import React, { Suspense } from 'react';
 

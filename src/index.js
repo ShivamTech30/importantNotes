@@ -11,11 +11,14 @@ import PureComponent from './Components/PureComponent/PureComponent';
 import DebounceComponent from './Components/DebounceComponent/DebounceComponent';
 import Startingprocess from './Startingprocess/Startingprocess';
 import MemoUse from './memoUse/MemoUse';
+import ComponentA from './Components/testing/ComponentA';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  
   <React.StrictMode>
-    
+    <ComponentA/>
     {/* <App /> */}
     {/* <InfinitScool/> */}
     {/* <PureComponent/>. */}
@@ -24,7 +27,7 @@ root.render(
     {/* <SystemDesigen/> */}
     {/* <Devops/> */}
     {/* <Startingprocess/> */}
-    <MemoUse/>
+    {/* <MemoUse/> */}
   </React.StrictMode>
 );
 

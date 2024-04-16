@@ -395,6 +395,10 @@ export default Logics
 //     // 1000000000000000000000000000000
 //     // debounce vs throttle
 
+// Throttling: In throttling, the function is executed at a fixed interval. Even if the triggering event occurs more frequently, the function is invoked according to the defined interval. (Throttling exicutes after every time interval 
+// but in debouncing evet executes after task is completed)
+// Debouncing: In debouncing, the function is only executed after a specific delay since the last event's occurrence. 
+
 // // what is prototype 
 // in javascript there is defult object constructor with that constructor there is default object is created and that object is known as prototype 
 
@@ -488,3 +492,33 @@ export default Logics
 
 // object.name="shivam"
 // console.log(object)
+
+
+
+
+// 4 year 
+
+// what is event deligation
+
+// what is array.flat method
+
+
+let array =[1,[2],[[4]],[[3],4[[[5]]]]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// &times close icon
