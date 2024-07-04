@@ -45,20 +45,12 @@ function App() {
 
   // console.log("sdsfdfsdf1",array.length)
 
-  function flattenArray(arr) {
-
-
+  function flattenArray(arr) { 
     for (let i = 0; i < arr.length; i++) {
       console.log("sdsfdfsdf", arr[i])
-    }
-
-
-    let result = [];
-
-    for (let i = 0; i < arr.length; i++) {
-
-      // console.log("sdsfdfsdf",Array.isArray(arr[i]))
-
+    } 
+    let result = []; 
+    for (let i = 0; i < arr.length; i++) { 
       if (Array.isArray(arr[i])) {
         result = result.concat(flattenArray(arr[i]));
         // console.log("sdsfdfsdf",result)

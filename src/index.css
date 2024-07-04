@@ -1,1 +1,24 @@
- 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.table-container{
+    position: relative;
+
+}
+.logout-btn{
+    position: absolute;
+    left: 20px;
+    top: 91%;
+
+}
+
+.demooo{
+    background-color: red;
+    color: white;
+}
+
+h1{
+    font-size: 29px !important;
+}

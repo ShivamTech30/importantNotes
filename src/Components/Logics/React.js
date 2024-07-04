@@ -99,7 +99,7 @@
 // componentWillMount() this method will render after the dependany changes
 
 
- 
+
 
 // componentWillUnmount 
 // that is the return statment in useEffect
@@ -212,7 +212,7 @@ export const React = () => {
 
 
 
-    
+
     return (
         <>
             <button onClick={demo}>
@@ -222,3 +222,55 @@ export const React = () => {
     )
 
 }
+
+
+// redux
+
+
+// core principle of redux
+// Actions:
+
+// Definition: Actions are plain JavaScript objects that represent payloads of information that send data from your application to your Redux store.
+
+// Purpose: Actions are the only source of information for the store. They carry a type field that indicates the type of action being performed, and optionally, a payload field that can contain any relevant data.
+
+// Example:
+// javascript
+// Copy code
+// const increment = (amount) => ({
+//   type: 'INCREMENT',
+//   payload: amount
+// });
+
+
+// Actions are typically created by action creator functions, which are functions that return action objects like the one shown above.
+// Reducers:
+
+// Definition: Reducers specify how the application's state changes in response to actions sent to the store.
+// Purpose: Reducers are pure functions that take the current state and an action, and return a new state.
+// Example:
+// javascript
+// Copy code
+// const counterReducer = (state = 0, action) => {
+//   switch (action.type) {
+//     case 'INCREMENT':
+//       return state + action.payload;
+//     case 'DECREMENT':
+//       return state - action.payload;
+//     default:
+//       return state;
+//   }
+// };
+// Each reducer typically manages a specific slice of the application state.
+// Store:
+
+// Definition: The store is the object that brings actions and reducers together. It holds the application state and allows access to the state via getState(), dispatches actions via dispatch(action), and registers listeners via subscribe(listener).
+// Purpose: The store holds the whole state tree of your application. It is created by passing the root reducer function to createStore(), a Redux function.
+// Example:
+// javascript
+// Copy code
+// import { createStore } from 'redux';
+
+// const store = createStore(counterReducer); // assuming counterReducer is defined earlier
+// The store is typically created once in your application and provides a single source of truth for your application state.
+// These three core concepts work together to manage the state of your application in a predictable and centralized manner. Actions are dispatched to the store, which then uses reducers to compute the new state based on the current state and the action dispatched. This flow ensures that state changes are explicit, predictable, and traceable, which is crucial for maintaining a robust and maintainable application state management system like Redux.

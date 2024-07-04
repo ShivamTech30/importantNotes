@@ -12,13 +12,22 @@ import DebounceComponent from './Components/DebounceComponent/DebounceComponent'
 import Startingprocess from './Startingprocess/Startingprocess';
 import MemoUse from './memoUse/MemoUse';
 import ComponentA from './Components/testing/ComponentA';
+import ObjectMenupulation from './ObjectMenupulation/ObjectMenupulation';
+import TimeOffModal from './TimeOffModal';
+import Table from './Table';
+import FunctionHoisting from './FunctionHoisting/FunctionHoisting';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   
   <React.StrictMode>
-    <ComponentA/>
+
+    {/* <ObjectMenupulation/> */}
+    {/* <ComponentA/> */}
+    {/* <TimeOffModal/> */}
+    {/* <Table/> */}
+<FunctionHoisting/>
     {/* <App /> */}
     {/* <InfinitScool/> */}
     {/* <PureComponent/>. */}
@@ -28,6 +37,7 @@ root.render(
     {/* <Devops/> */}
     {/* <Startingprocess/> */}
     {/* <MemoUse/> */}
+
   </React.StrictMode>
 );
 

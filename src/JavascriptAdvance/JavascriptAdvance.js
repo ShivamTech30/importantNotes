@@ -2,6 +2,15 @@ import React from 'react'
 
 const JavascriptAdvance = () => {
 
+
+
+    // introduction :-
+    // my name is shivam sharma  and 
+    // i am from  madhya pradesh bhopal, 
+    // i completed my graduaction form AIET college  in jaipur,  
+    // i  am courrenty working in externlabs as a sr software developer.
+    //  and i have 3+ years for experiance in react js 
+
     // --------------------- first class function start---------------------------
 
     // A programming language is said to have First-class functions if functions in that language are treated like other variables. So the functions can be assigned to any other variable or passed as an argument or can be returned by another function. JavaScript treats function as a first-class citizen.
@@ -15,6 +24,7 @@ const JavascriptAdvance = () => {
     //     return takeNewFun
     // }
     // AclassFunction(newFunc())
+
 
     // console.log(AclassFunction(newFunc()))
 
@@ -31,45 +41,45 @@ const JavascriptAdvance = () => {
     // }
     // console.log(new newKetWord())
 
-        //---------------------- new keyword end ------------------------------------------
+    //---------------------- new keyword end ------------------------------------------
 
 
-        //---------------------- iife start ------------------------------------------
+    //---------------------- iife start ------------------------------------------
 
-        //  immediately  invoked  function expression
+    //  immediately  invoked  function expression
 
-        //  const invokedFun =(()=>{
-        // console.log("nmbjsvdchsd")
-        // })() 
+    //  const invokedFun =(()=>{
+    // console.log("nmbjsvdchsd")
+    // })() 
 
-        (function () {
+    (function () {
 
-            console.log("nmbjsvdchsd1")
-        })()
+        console.log("nmbjsvdchsd1")
+    })()
 
     //---------------------- iife end ------------------------------------------
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-    
-// }
+    // for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
 
-let arrayData=[20,5,7,9,43,5,7] 
+    // }
+
+    let arrayData = [20, 5, 7, 9, 43, 5, 7]
 
 
-// for(let i=0; i<arrayData.length; i++){  
-//     for (let j = i+1; j < arrayData.length; j++) {
-//         if(arrayData[i] > arrayData[j]){
+    // for(let i=0; i<arrayData.length; i++){  
+    //     for (let j = i+1; j < arrayData.length; j++) {
+    //         if(arrayData[i] > arrayData[j]){
 
-//             arrayData[i] = arrayData[i] + arrayData[j];
-//             arrayData[j] = arrayData[i] - arrayData[j];
-//             arrayData[i] = arrayData[i] - arrayData[j];
+    //             arrayData[i] = arrayData[i] + arrayData[j];
+    //             arrayData[j] = arrayData[i] - arrayData[j];
+    //             arrayData[i] = arrayData[i] - arrayData[j];
 
-//         }   
-//     }
-// }
+    //         }   
+    //     }
+    // }
 
-console.log("jhgcfxgvh");
+    console.log("jhgcfxgvh");
 
 
 
