@@ -1,6 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const FunctionHoisting = () => {
+
+
+    const [value, setValue] = useState(false)
+
+
+
+    useEffect(() => {
+
+        console.log("cbbvgshdjksd")
+
+    }, [value])
+
+
+
+
+
+    const JustClickFun = () => {
+
+        setValue(true)
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // ------1 start--------
@@ -39,33 +82,139 @@ const FunctionHoisting = () => {
 
     //----------2 end---------
 
-// -----------3 start----------
-    let  persne={
-        name:"shivam",
-        age:27
+    // -----------3 start----------
+    let persne = {
+        name: "shivam",
+        age: 27
     }
 
-    let array =[]
+    let array = []
 
-    let output = Object.entries(persne).map((items,id)=>{ 
+    let output = Object.entries(persne).map((items, id) => {
         array.push(items)
 
     })
 
-    console.log("mdbvsjd",array)
+    console.log("mdbvsjd", array)
 
     // -----------3 start----------
- 
 
-    let htmlData=`"<h1 className="demooo">this string will convert in jsx </h1>"`
+
+    let htmlData = `"<h1 className="demooo">this string will convert in jsx </h1>"`
+
+
+
+
+    let reverseData = [1, 3, 5, [2], [[3]], [4, 5], 6]
+
+    // for (let i = reverseData.length-1; i >= 0; i--) {
+
+    //     console.log("sdjhvhsdhf", reverseData[i])
+    // }
+
+    function myShoredFun1(shortdData) {
+
+        let arrayss = []
+        for (let i = 0; i < shortdData.length; i++) {
+            
+            if (Array.isArray(shortdData[i])) {
+                // myShoredFun1(shortdData[i])
+                arrayss = arrayss.concat(myShoredFun1(shortdData[i]));
+            }
+            else {
+                arrayss.push(reverseData[i])
+            }
+
+
+
+        }
+
+        return arrayss
+
+        // return shortdData.flat( Infinity)
+
+    }
+    // myShoredFun1
+    console.log("sdnfksdf-------1", myShoredFun1(reverseData))
+
+
+
+
+
+
+    function myShoredFun(shortdData) {
+
+
+        for (let i = 0; i < shortdData.length; i++) {
+
+            for (let j = 0; j < shortdData.length; j++) {
+
+                if (shortdData[i] == shortdData[j]) {
+                    console.log("dhfdfsdlf", shortdData[j])
+                    // return 
+                }
+            }
+
+        }
+
+    }
+
+    let shortdData2 = [1, 3, 1, 4, 1, 6, 3]
+    let shortdData1 = [1, 3, 1, 4, 1, 6, 3]
+
+    console.log("dhfdfsdlf", shortdData2.concat(shortdData1))
+    console.log("dhfdfsdlf", [...shortdData1, ...shortdData2])
+    console.log("dhfdfsdlf", [`${shortdData1} , ${shortdData2}`])
+
+    // let output1 = new Set([...shortdData])
+    // console.log("dhfdfsdlf", output1.values())
+
+
+
+
+
+
+
+
+
+
+    function flattenArray(arr) {
+        let flattened = [];
+    
+        arr.forEach(item => {
+            if (Array.isArray(item)) {
+                flattened = flattened.concat(flattenArray(item));
+            } else {
+                flattened.push(item);
+            }
+        });
+    
+        return flattened;
+    }
+    
+    // Example usage:
+    let nestedArray = [1, 3, 5, [2], [[3]], [4, 5], 6];
+    let flattenedArray = flattenArray(nestedArray);
+    console.log("smdhvjsds",flattenedArray);
 
     return (
-        <>  
-        <div style={{color:"red"}}>FunctionHoisting</div>
+        <>
 
-        <div dangerouslySetInnerHTML={{__html:htmlData}} />
-               
-         
+
+            <div className=''>
+                <button onClick={(e) => JustClickFun(e)}>
+                    view
+                </button>
+
+            </div>
+
+
+
+            <div style={{ color: "red" }}>FunctionHoisting</div>
+
+            <div dangerouslySetInnerHTML={{ __html: htmlData }} />
+
+
 
         </>
     )

@@ -18,17 +18,20 @@ import Table from './Table';
 import FunctionHoisting from './FunctionHoisting/FunctionHoisting';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log(    <App />  )
+
+ 
 root.render(
 
-  
-  <React.StrictMode>
+
+  < >
 
     {/* <ObjectMenupulation/> */}
     {/* <ComponentA/> */}
     {/* <TimeOffModal/> */}
     {/* <Table/> */}
-<FunctionHoisting/>
-    {/* <App /> */}
+    {/* <FunctionHoisting/> */}
+    <App />
     {/* <InfinitScool/> */}
     {/* <PureComponent/>. */}
     {/* <DebounceComponent/> */}
@@ -38,7 +41,7 @@ root.render(
     {/* <Startingprocess/> */}
     {/* <MemoUse/> */}
 
-  </React.StrictMode>
+  </ >
 );
 
 // If you want to start measuring performance in your app, pass a function

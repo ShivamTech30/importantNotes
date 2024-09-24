@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ShivamTech30.github.io/importantNotes",
-  "name": "myapp",
+   "name": "myapp",
+   "homepage": "https://ShivamTech30.github.io/importantNotes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

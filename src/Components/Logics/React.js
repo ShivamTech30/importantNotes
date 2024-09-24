@@ -113,7 +113,7 @@
 
 
 // useMemo
-// use memo is used for memorized value ,that means is will store your value untill your parameter will not change 
+// use memo is used for memorized value ,that means is will store your cache value untill your parameter will not change 
 
 
 // ----3-----// controled and unControled Components
@@ -125,7 +125,12 @@
 // Controlled Components: In React, Controlled Components are those in which form’s data is handled by the component’s state.
 
 
+// what is globle execution
+// When JavaScript code runs Global Execution Context (GEC) is created. Execution of code is happening in two phases: Phase 1 (Creation Phase) is allocating memory to the variables and functions. For all variables value stored in memory is undefined and functions are copied in memory
 
+
+// what is  laxical scoping 
+// let and const are the laxiacal scop 
 
 
 // reconcilation

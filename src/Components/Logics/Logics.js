@@ -514,6 +514,20 @@ let array =[1,[2],[[4]],[[3],4[[[5]]]]]
 
 
 
+// let headersList = {
+//     "Accept": "*/*",
+//     "User-Agent": "Thunder Client (https://www.thunderclient.com)"
+//    }
+   
+//    let response = await fetch("https://jsonplaceholder.typicode.com/posts", { 
+//      method: "GET",
+//      headers: headersList
+//    });
+   
+//    let data = await response.text();
+//    console.log(data);
+   
+
 
 
 
@@ -522,3 +536,14 @@ let array =[1,[2],[[4]],[[3],4[[[5]]]]]
 
 
 // &times close icon
+
+
+
+
+
+
+// CSS: position, display, how to align 2divs horizontal
+
+// JavaScript: closure, hoisting, denouncing weakset, weakmap, forEach v/s map 
+
+// React: hooks, hocs, context api, props, class based and functional based, lifecycle events Few programming questions like : Check whether the given array is sorted or not. Create a modified object by interchanging key-value pair of original object.

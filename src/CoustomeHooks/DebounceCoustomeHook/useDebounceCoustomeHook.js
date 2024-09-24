@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function useDebounceCoustomeHook(  changedata, timeIntrval = 500 ) {
+function useDebounceCoustomeHook(  changedata, timeIntrval = 2000 ) {
 
 
     const [debounceValue, setDbounceValue] = useState()

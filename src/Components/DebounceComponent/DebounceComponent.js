@@ -3,13 +3,13 @@ import useDebounceCoustomeHook from '../../CoustomeHooks/DebounceCoustomeHook/us
 
 const DebounceComponent = () => {
 
-    const [changedata,setChangeData]=useState("hello")
+    const [changedata,setChangeData]=useState(" ")
 
     const {debounceValue,setDbounceValue} =useDebounceCoustomeHook(changedata)
 
     const changeValue=(e)=>{
         setChangeData(e.target.value)
-        setDbounceValue( e.target.value)
+        // setDbounceValue( e.target.value)
         // useDebounceCoustomeHook()
     }
 

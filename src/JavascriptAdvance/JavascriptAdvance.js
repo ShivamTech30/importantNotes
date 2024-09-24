@@ -83,6 +83,18 @@ const JavascriptAdvance = () => {
 
 
 
+
+
+    // time complexity meant how many lines of code that you used
+
+    // space complexity means how any variable that you used 
+
+
+    // arrys are the liner data strucute 
+    // tree and graph are non-liner data structure
+    // stack is first in last out
+
+
     return (
         <div>
 
