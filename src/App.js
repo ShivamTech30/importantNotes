@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 // import Loader from './Components/Loader/Loader';
-// import { Logics } from './Components/Logics/Logics';
+import  Logics  from './Components/Logics/Logics';
 import useToggle from './useToggle';
 import { useState } from 'react';
 import MemoUse from './memoUse/MemoUse';
 import JavascriptAdvance from './JavascriptAdvance/JavascriptAdvance';
+import { React } from './Components/Logics/React';
 
 function App() {
 
@@ -857,8 +858,8 @@ let value =`  const [state,stat,toggleFun]  =useToggle("sss")
 
       {/* <JavascriptAdvance/> */}
 
-      {/* <Loader/> */}
-      {/* <Logics/> */}
+      <React/>
+      <Logics/>
 
       {/* <h1>{state }</h1> */}
       {/* <button className='flexBox' onClick={()=>toggleFun("value")}>1</button> */}
