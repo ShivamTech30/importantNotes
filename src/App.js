@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 // import Loader from './Components/Loader/Loader';
-import  Logics  from './Components/Logics/Logics';
+import Logics from './Components/Logics/Logics';
 import useToggle from './useToggle';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MemoUse from './memoUse/MemoUse';
 import JavascriptAdvance from './JavascriptAdvance/JavascriptAdvance';
 import { React } from './Components/Logics/React';
+import CssConcepts from './Components/CssConepts/CssConcepts';
 
 function App() {
 
@@ -426,7 +427,7 @@ function App() {
 
   // console.log("adfsdnsdf", arrayss)
 
-let value =`  const [state,stat,toggleFun]  =useToggle("sss")
+  let value = `  const [state,stat,toggleFun]  =useToggle("sss")
 
     console.log("jghjsdhvs",state, stat)
 
@@ -843,23 +844,491 @@ let value =`  const [state,stat,toggleFun]  =useToggle("sss")
    console.log("adfsdnsdf", arrayss)
 
   
+import axios from 'axios';
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 
+const InterviewTest = () => {
+
+    const [value, setValaue] = useState('')
+
+    const [pinCode, setPinCode] = React.useState("");
+    const [value1, setValaue1] = useState('')
+
+    const testFun = (e, timeoutData = 3000) => {
+
+
+        setValaue(e?.target?.value)
+
+
+    }
+
+    useEffect(() => {
+
+        let timeout = setTimeout(() => {
+
+            console.log("avdfhgdsdmdjdjeeerj")
+
+        }, 1000)
+
+        return () => clearTimeout(timeout)
+
+    }, [value])
+
+
+    // Debouncing in Javascript
+
+    useEffect(() => {
+        console.time()
+        console.log("heloooo -------------")
+        console.timeEnd()
+    }, [])
+
+    useLayoutEffect(() => {
+        console.time()
+        console.log("heloooo")
+        console.timeEnd()
+
+    }, [])
+
+
+
+
+
+
+
+
+    useEffect(() => {
+        const str = "my name is shivam";
+        let splitData = str.split(" ")
+        let brankarray = []
+        for (let i = splitData.length - 1; i >= 0; i--) {
+            brankarray.push(splitData[i])
+        }
+
+        console.log("sfkfjhbdf", brankarray.join(' '))
+
+
+    }, [])
+
+
+
+    const objectsss = [
+        {
+            name: 'axe', des: 'developer1'
+        },
+        {
+            name: 'ace', des: 'developer1'
+        },
+        {
+            name: 'abc', des: 'developer2'
+        },
+        {
+            name: 'xyz', des: 'developer3'
+
+        }
+
+    ]
+
+
+
+
+
+    for (let i = 0; i < objectsss.length; i++) {
+        for (let j = 0; j < objectsss.length; j++) {
+            console.log(objectsss?.[j]?.name, objectsss?.[j + 1]?.name)
+            if (objectsss?.[j]?.name > objectsss?.[j + 1]?.name) {
+                let temp = objectsss?.[j]?.name;
+                objectsss[j].name = objectsss?.[j + 1]?.name;
+                objectsss[j + 1].name = temp
+            }
+
+        }
+
+
+    }
+
+
+    // for (let i = 0; i < objectsss.length; i++) { 
+    //     for (let j = 0; j < objectsss.length; j++) {  
+    //         if (objectsss?.[j]  > objectsss?.[j + 1]) {
+    //             let temp = objectsss?.[j]; 
+    //             // objectsss?.[j] = objectsss?.[j + 1];
+    //             // objectsss?.[j + 1] = temp
+
+
+    //         }
+
+    //     }
+
+
+    // }
+
+    console.log("dcsdhvfhsdf", objectsss)
+    // return blankArray
+
+    // }
+    // console.log(fun(obj))
+
+    // React.useEffect(() => {
+    //     const getData = setTimeout(() => {
+    //         axios
+    //             .get(https://api.postalpincode.in/pincode/${"pinCode"})
+    //             .then((response) => {
+    //                 console.log(response.data[0]);
+    //             });
+    //     }, 500)
+
+    //     return () => clearTimeout(getData)
+    // }, [pinCode])
+
+
+
+    let arr = [2, 3, 5, 7, 4, 8, 5, 6, 7, 4]
+
+
+    const uniqueArr = [];
+
+    for (let index = 0; index < arr.length; index++) {
+
+        let unirq = false
+
+        for (let j = 0; j < uniqueArr.length; j++) {
+            if (arr[index] == uniqueArr[j]) {
+                unirq = true
+            }
+        }
+
+
+
+        if (unirq == false) {
+            uniqueArr.push(arr[index])
+
+        }
+
+
+
+    }
+
+
+
+    // let filterData =repetedArray.filter((items,id,idss)=> console.log("sbshdsdd",items,idss))
+    // let filterData =repetedArray.filter((value, index, self)=>  self.indexOf(value) === index)
+
+
+    console.log("sbshdsdd", uniqueArr)
+
+
+
+    let removedArray = [2, 3, [5, 7, [[4]]], 8, 5, 6, 7, 4]
+
+    let makeRecursone = (removedArray, times) => {
+
+        let array = []
+        let count = 0
+
+        console.log("jjlfddjkdf ---------------", count)
+
+
+        for (let i = 0; i < removedArray.length; i++) {
+            if (Array.isArray(removedArray[i]) && count < times) {
+                array = array.concat(makeRecursone(removedArray[i]))
+                console.log("jjlfddjkdf---------", array)
+                count++
+            }
+
+            else {
+                array.push(removedArray[i])
+            }
+
+
+
+        }
+
+        return array
+
+
+    }
+
+    console.log("jjlfddjkdf", makeRecursone(removedArray, 2
+
+    ))
+
+
+
+    let arrysss = [2, 3, 5, 7, 4, 8, 5, 6, 7, 4]
+    let uniqueArrs = []
+
+    for (let i = 0; i < arrysss.length; i++) {
+
+        let uniqueArr = false
+
+        for (let j = 0; j < uniqueArrs.length; j++) {
+
+            if (arrysss[i] == uniqueArrs[j])
+
+                uniqueArr = true
+        }
+
+        if (uniqueArr == false) {
+            uniqueArrs.push(arrysss[i])
+        }
+
+
+    }
+
+    console.log({ uniqueArrs })
+
+
+
+    let shortedsss = [2, 3, 5, 7, 4, 8, 5, 6, 7, 4]
+
+    for (let i = 0; i < shortedsss.length; i++) {
+
+        for (let j = 0; j < shortedsss.length; j++) {
+
+            if (shortedsss[j] > shortedsss[j + 1]) {
+
+                let temp = shortedsss[j]
+                shortedsss[j] = shortedsss[j + 1]
+                shortedsss[j + 1] = temp
+
+            }
+
+
+
+
+
+        }
+
+    }
+
+    console.log({ shortedsss })
+
+
+
+
+    let PushArray = [1, 2, 3, 4, 5]
+    let branckPushArray = [7, 8, 9]
+
+
+    for (let i = 0; i < PushArray.length; i++) {
+        // branckPushArray[PushArray.length] 
+        branckPushArray[PushArray[i]] = PushArray[i]
+        console.log("sjgjskfjd---------", PushArray[i])
+    }
+
+    console.log("sjgjskfjd", branckPushArray)
+
+
+
+
+    const isPalindrome = (value) => {
+
+        let j = value.length - 1
+
+        console.log("xjhfghjdf", j)
+
+        let valyes = value.length / 2
+
+        let MAinVal = Math.trunc(valyes)
+
+
+
+
+
+        for (let i = 0; i < MAinVal; i++) {
+
+
+        }
+
+
+
+    }
+
+
+
+    let str1 = "racecar";
+    let str2 = "nitin";
+    let str3 = "Rama";
+
+    console.log(isPalindrome(str1));
+    console.log(isPalindrome(str2));
+    console.log(isPalindrome(str3));
+
+    // 5*4*3*2*1
+
+    console.log('zjhdgjdfsdsf', "4" - 4)
+
+
+    const factoial = (number) => {
+
+        let data = number
+
+
+        for (let i = 1; i < number; i++) {
+            data = data * i
+
+        }
+
+        return data
+
+
+    }
+
+
+    console.log("jxhchfvddf", factoial(5))
+
+
+    useEffect(() => {
+        const datttaa = async () => {
+
+            let headersList = {
+                "Accept": "*/*",
+                "User-Agent": "Thunder Client (https://www.thunderclient.com)"
+            }
+
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "GET",
+                headers: headersList
+            });
+
+            let data = await response.text();
+            console.log("ngsdvjsdhsd", JSON.parse(data));
+            //    setValaue1(JSON.parse(data))
+        }
+        datttaa()
+        console.log("ngsdvjsdhsd")
+    })
+
+
+
+    console.log('zjhdgjdfsdsf---1', "4" - 3 * "3")
+
+
+    let arrayss = [1, 2, 3, 4, 2, 5, 2, 2, 8]
+
+    const newArrayaData = [
+        {
+            value: "car",
+            name: "audi",
+        },
+        {
+            value: "bike",
+            name: "pulser",
+        },
+        {
+            value: "truck",
+            name: "dumbhar",
+        },
+        {
+            value: "car",
+            name: "audi",
+        },
+        {
+            value: "bike",
+            name: "pulser",
+        },
+        {
+            value: "bike",
+            name: "pulser",
+        },
+        {
+            value: "car",
+            name: "audi",
+        },
+
+        {
+            value: "truck",
+            name: "dumbhar",
+        },
+
+        {
+            value: "truck",
+            name: "dumbhar",
+        }
+    ]
+
+    const newArrayOut = {}
+
+    newArrayaData?.forEach(items => {
+
+         console.log("sjhgjhdfdf-------------", newArrayOut[items.value])
+
+        if (newArrayOut[items.value]) { 
+            // newArrayOut?.[items.value].push(items)
+        } else {
+            newArrayOut[items.value] = [items]
+        }
+
+    })
+
+    console.log("sjhgjhdfdf", newArrayOut)
+
+
+
+
+
+
+    // bodmas
+
+    return (
+
+        <div>
+            <h3>just test</h3>
+
+            <input type='text' value={value} onChange={(e) => testFun(e)} />
+            <input
+                placeholder="Search Input.."
+                onChange={(event) => setPinCode(event.target.value)}
+            />
+            {/* <button onClick={Submit}>submit </button> */}
+
+
+
+        </div>
+    )
+}
+
+export default InterviewTest
 
 
 
 `
+  const [valuw, setVlues] = useState("")
+
+  const DeboucseFun = (e) => {
+    setVlues(e.target.value)
+  }
+
+  useEffect(() => {
+    let intervql
+
+    intervql = setTimeout(() => {
+      // alert("hello")
+      console.log("bvssdfds", "avdfhgdsdmdjdjeeerj")
+    }, 1000)
+
+
+
+    return () => clearTimeout(intervql)
+  }, [valuw])
 
 
 
 
+  console.log("bvssdfds", valuw)
   return (
     <div className="App">
-
+      
 
       {/* <JavascriptAdvance/> */}
+      <CssConcepts />
 
-      <React/>
-      <Logics/>
+
+      <React />
+      <Logics />
+      
+      <input type='text' value={valuw} onChange={(e) => DeboucseFun(e)} />
 
       {/* <h1>{state }</h1> */}
       {/* <button className='flexBox' onClick={()=>toggleFun("value")}>1</button> */}
@@ -877,7 +1346,7 @@ let value =`  const [state,stat,toggleFun]  =useToggle("sss")
       <div>
         <p>
           {/* <MemoUse state={CountValue} /> */}
-          <MemoUse />
+          {/* <MemoUse /> */}
 
         </p>
         {/* 
@@ -888,10 +1357,11 @@ let value =`  const [state,stat,toggleFun]  =useToggle("sss")
       </div>
       {/* memo hook end */}
 
-<pre>
-{value}
-</pre>
-    
+      <pre>
+        {value}
+      </pre>
+
+
     </div>
   );
 }

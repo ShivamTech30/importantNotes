@@ -282,6 +282,30 @@ const Logics = () => {
     // Object.
 
 
+
+         hoisting
+
+     hoisting is like if we declare the function at any of the line or any ware  ,what will we happent ,with the default
+     behaviour of javascript the hosting  will call that function  at the top of the scope , 
+
+     Example 
+
+     const demoSam = demo()
+     const demo =()=>{
+         console.log(" just demo")
+     }
+      demo()
+       in that case the demo, which is line number 11 this demo() is called as declaration
+
+     And 
+
+     if we initalize  with the use of variable  , like "const demoSam =demo()"  this wil give error
+
+
+     In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+
+
+
     // what is truly and falsy in javascript
     // When non-boolean values are used in a boolean context, such as the condition of an if statement, they will be coerced into either true or false . Values that are coerced into true are called truthy and values that are coerced into false are called falsy.
 
@@ -513,28 +537,7 @@ export default Logics
 
 //     ))
 
-//     // hoisting
-
-//     // hoisting is like if we declare the function at any of the line or any ware  ,what will we happent ,with the default
-//     // behaviour of javascript the hosting  will call that function  at the top of the scope , 
-
-//     // Example 
-
-//     // const demoSam = demo()
-//     // const demo =()=>{
-//     //     console.log(" just demo")
-//     // }
-//     //  demo()
-//     //   in that case the demo, which is line number 11 this demo() is called as declaration
-
-//     // And 
-
-//     // if we initalize  with the use of variable  , like "const demoSam =demo()"  this wil give error
-
-
-//     // In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
-
-
+ 
 
 
 //     // what are the scops => block,functional,globle
@@ -621,7 +624,7 @@ export default Logics
 //     // reconcilation
 //     // Reconciliation is the process through which React updates the Browser DOM.
 
-
+what is event bubling 
 
 //     // 9999999999999999999999999999
 //     // promis async await callback
